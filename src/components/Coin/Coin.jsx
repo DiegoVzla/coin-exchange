@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-
 const Td = styled.td`
     border: 1px solid #cccccc;
     width: 25vh;
@@ -33,3 +32,8 @@ export default function Coin(props) {
 
 }
 
+Coin.propTypes = {
+    name: PropTypes.string.isRequired,
+    ticker: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired
+}
